@@ -1,5 +1,8 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import './App.css';
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+
 import Login from "./Components/Login";
 
 function App() {
@@ -7,11 +10,14 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/"></Route>
-          </Routes>
+          <Route exact path="/">
+            <Login />
+          </Route>
+          
+        </Routes>
       </Router>
     </div>
   );
 }
-
+ 
 export default App;
